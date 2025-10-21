@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../OfficeConverter.Core/OfficeConverter.Core.csproj" />
+    <ProjectReference Include="../OfficeConverter.Infrastructure/OfficeConverter.Infrastructure.csproj" />
+    <ProjectReference Include="../OfficeConverter.Converters.OfficeInterop/OfficeConverter.Converters.OfficeInterop.csproj" />
+    <ProjectReference Include="../OfficeConverter.Converters.Excel/OfficeConverter.Converters.Excel.csproj" />
+    <ProjectReference Include="../OfficeConverter.Converters.Pandoc/OfficeConverter.Converters.Pandoc.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
